@@ -1,24 +1,48 @@
 {
   "expo": {
-    "name": "biohacker-tmp",
-    "slug": "biohacker-tmp",
+    "name": "Biohacker",
+    "slug": "biohacker",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "backgroundColor": "#F5F9FF",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "requireFullScreen": false,
+      "bundleIdentifier": "com.csci343.biohacker",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Biohacker uses Face ID to lock your private supplement journal."
+      }
     },
     "android": {
+      "package": "com.csci343.biohacker",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0D47A1",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "permissions": ["USE_BIOMETRIC", "USE_FINGERPRINT", "VIBRATE"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#0D47A1"
+        }
+      ],
+      "expo-font",
+      [
+        "expo-local-authentication",
+        { "faceIDPermission": "Biohacker uses Face ID to lock your private supplement journal." }
+      ]
+    ]
   }
 }
