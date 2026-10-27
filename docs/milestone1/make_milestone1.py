@@ -255,15 +255,16 @@ PAPER = [
      "and each grade (A–F) earns cash and XP. XP raises the user’s level, which unlocks new equipment, floor and wall "
      "styles, and a larger floor in a virtual 3D gym. Users design the gym and place machines, "
      "which attract customers who produce hourly revenue. The meaningful result is a user who knows safe dosing and keeps a consistent routine."),
-    ("Tools and Components", "The app is built with React Native and Expo. React Navigation provides a root "
-     "native stack with five bottom tabs (12 pages plus 3 modals). It has a NavigationContainer, SafeAreaProvider and StatusBar, custom Poppins fonts, a splash screen, "
-     "and a constants theme file with a blue and white palette. Layouts use useWindowDimensions to fit every screen "
-     "and orientation. Concepts used: TextInputs with validation, "
-     "Linking and web-loaded images, useMemo, useLayoutEffect and useEffect, Alerts, icons, "
-     "Switches, linear gradients, Modals, FlatLists and map, multiple-orientation support, and app-wide state "
-     "management with the Context API and useReducer. It sends HTTP requests to the PubChem API. It also uses community "
-     "components and native device features: AsyncStorage for internal storage, expo-haptics for vibration feedback, "
-     "expo-local-authentication for a biometric lock, and react-native-svg to draw the 3D gym."),
+    ("Tools and Components", "Biohacker is built with React Native and Expo. Screens are organized with React "
+     "Navigation, using a bottom tab bar for the five main sections and stacked screens for details, quizzes, the "
+     "journal and settings, for ten pages plus three pop-up windows. The app has a navigation container, safe area "
+     "support, a status bar, custom Poppins fonts, a splash screen, and a theme file that holds the blue and white "
+     "colors. Layouts adjust automatically to any phone or tablet and to both portrait and landscape. The app uses "
+     "text inputs with validation, links to outside websites, images loaded from the web, React hooks (useMemo, "
+     "useLayoutEffect and useEffect), alert pop-ups, icons, switches, gradient backgrounds, modals, scrolling lists, "
+     "and app-wide state management with the Context API. It requests live chemistry data from the free PubChem "
+     "database. Device features include saving data to the phone’s storage, vibration feedback, and a Face ID or "
+     "fingerprint lock. A community drawing library (react-native-svg) is used to draw the 3D gym."),
 ]
 
 
